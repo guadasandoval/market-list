@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsoMarketList</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="robots" content="index"/> 
+    <meta name="robots" content="follow"/>
+    <link rel="icon" href="./images/favicon.jpg" type="image/jpeg"/>
+    <meta name="description" content="Lista de productos de supermecado"/>
+    <meta name="keywords" content="market, list, products, categorys"/>
+    <meta name="author" content="Guadalupe Sandoval"/>
+    <meta name="copyright" content="Guadalupe Sandoval"/>
+    <!-- FACEBOOK -->
+    <meta property="og:url"                content="https://winterhack-retotres.web.app" />
+    <meta property="og:type"               content="Lista de productos" />
+    <meta property="og:title"              content="OsoMarketList" />
+    <meta property="og:description"        content="" />
+    <meta property="og:image"              content="./../images/favicon.jpg"/>
+    <!-- TWITTER -->
+    <meta property="twitter:url"                content="https://winterhack-retotres.web.app" />
+    <meta property="twitter:type"               content="Lista de productos" />
+    <meta property="twitter:title"              content="OsoMarketList" />
+    <meta property="twitter:description"        content="" />
+    <meta property="twitter:image"              content="./../images/favicon.jpg"/>
+    
+</head>
+<body>
+    
+    <header>
+        <a href="index.html"><h2 id="titulo">OsoMarketList</h2></a>
+    </header>
+    <div class="container">
+    <section id="emptyState">
+        <div class="emptyState">
+            <img src="./images/emptyState.svg" alt="">
+                <h3>Upss! Tu lista está vacía</h3>
+                <div class="textEmpty">
+                    <p>Hacé tab en el botón para empezar a guardar tus productos favoritos</p>
+                </div>
+                    <button id="start">EMPEZAR</button> 
+                </div>      
+    </section>
+    <section id="formCard" class="off">
+        <div class="formCard">
+            <h3>Agregá un producto</h3>
+            <select name="category" id="prodCategory">
+                <option value="" selected disabled hidden>Seleccioná una categoría</option>
+                        <option value="Verduras">🥕 Frutas y Verduras</option>
+                        <option value="Bebidas">🍺 Bebidas</option>
+                        <option value="Lacteos">🧀 Lácteos</option>
+                        <option value="Carnes">🥩 Carnes</option>
+                    </select> 
+            <input type="text" id="productName" placeholder="Nombre">
+            <textarea id="productDesc" placeholder="Descripción"></textarea>
+            <button id="add">Agregar a mi lista</button>
+        </div>
+    </section>
+    <section id="itemsProducts" class="off">
+        <div class="listProducts">
+            <h3>Tu lista de productos</h3>
+                <ul id="items">
+                </ul>
+            <button class="btn" id="listProd">+</button>
+        </div>
+    </section>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
